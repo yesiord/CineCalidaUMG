@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cartelera"
+            android:icon="@mipmap/film_48px"
+            android:title="Cartelera" />
+        <item
+            android:id="@+id/nav_bistro"
+            android:icon="@mipmap/vip_48px"
+            android:title="Bistro" />
+        <item
+            android:id="@+id/nav_proximos"
+            android:icon="@mipmap/star_filled_48px"
+            android:title="Próximamente" />
+        <item
+            android:id="@+id/nav_promocion"
+            android:icon="@mipmap/discount_48px"
+            android:title="Promociones" />
+        <item
+            android:id="@+id/nav_dulceria"
+            android:icon="@mipmap/confectionery_48px"
+            android:title="Dulceria" />
+        <item
+            android:id="@+id/nav_boletos"
+            android:icon="@mipmap/starred_ticket_48px"
+            android:title="Mis Boletos" />
+        <item
+            android:id="@+id/nav_sugerencia"
+            android:icon="@mipmap/message_filled_48px"
+            android:title="Buzon sugerencias" />
+    </group>
+
+    <item android:title="Configuración">
+        <menu>
+            <item
+                android:id="@+id/nav_ubicacion"
+                android:icon="@mipmap/geo_fence_48px"
+                android:title="Ubicación" />
+            <item
+                android:id="@+id/nav_beneficios"
+                android:icon="@mipmap/suitcase_48px"
+                android:title="Tarjeta beneficios" />
+            <item
+                android:id="@+id/nav_tarjeta_credito"
+                android:icon="@mipmap/mastercard_48px"
+                android:title="Tarjeta crédito" />
+        </menu>
+    </item>
+    <item android:title="Prueba">
+        <menu>
+            <item
+                android:id="@+id/nav_pruebas"
+                android:icon="@mipmap/test_tube_48px"
+                android:title="pruebas" />
+        </menu>
+    </item>
+
+</menu>
