@@ -1,5 +1,9 @@
 package com.projects.ron.cinecalidaumg.Helper;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -26,5 +30,13 @@ public class MyHelper {
 
         // DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         return dateFormat.format(date);
+    }
+
+
+    public static Bitmap obtenerImagen(String base64){
+        byte[] decodedString = Base64.decode(base64, Base64.DEFAULT);
+        Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+        //imagen_pelicula.setImageBitmap(decodedByte);
+        return decodedByte;
     }
 }
