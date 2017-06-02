@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
 
+import java.sql.Blob;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -33,10 +34,13 @@ public class MyHelper {
     }
 
 
-    public static Bitmap obtenerImagen(String base64){
-        byte[] decodedString = Base64.decode(base64, Base64.DEFAULT);
-        Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+    public static Bitmap obtenerImagen(byte[] data){
+       // byte[] decodedString = Base64.decode(base64, Base64.DEFAULT);
+       // Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
         //imagen_pelicula.setImageBitmap(decodedByte);
-        return decodedByte;
+        byte[] byteArray = data;
+
+        Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0 ,byteArray.length);
+        return bm;
     }
 }

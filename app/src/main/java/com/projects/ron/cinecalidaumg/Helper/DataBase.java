@@ -14,8 +14,9 @@ public class DataBase {
 
     Connection conn;
     public static final String DRIVER = "jdbc:jtds:sqlserver://";
-    public static final String IP = "192.168.1.6/";
-    public static final String DB = "Cine";
+
+    public static final String IP = "192.168.43.221/";
+    public static final String DB = "DBCINECALIDAUMG";
     public static final String USER = "admin";
     public static final String PASS = "admin";
     private Statement stm;
