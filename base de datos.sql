@@ -398,4 +398,8 @@ AS
 	where cine.idcine = @pidCine
 go
 
-exec getProductosCine @idCine = 2
+
+
+select producto.idproducto, producto.precio, producto.titulo, imagen.data from producto 
+inner join imagen 
+on producto.idImagen = imagen.idImagen

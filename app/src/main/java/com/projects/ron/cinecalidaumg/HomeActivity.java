@@ -24,6 +24,7 @@ import com.projects.ron.cinecalidaumg.Helper.MyHelper;
 import com.projects.ron.cinecalidaumg.dialogos.DialogoCalendario;
 
 import java.text.ParseException;
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, DatePickerDialog.OnDateSetListener {
@@ -138,6 +139,8 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.nav_cartelera) {
             // Handle the camera action
             Toast.makeText(getApplicationContext(),"Cartelera",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), UbicacionPreferenciaActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_bistro) {
             Toast.makeText(getApplicationContext(),"Bistro",Toast.LENGTH_SHORT).show();
@@ -150,6 +153,8 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_dulceria) {
             Toast.makeText(getApplicationContext(),"Dulceria",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(),ListaProductoActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_boletos) {
             Toast.makeText(getApplicationContext(),"Boletos",Toast.LENGTH_SHORT).show();
