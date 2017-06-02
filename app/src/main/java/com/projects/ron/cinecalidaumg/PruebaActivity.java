@@ -63,12 +63,12 @@ public class PruebaActivity extends AppCompatActivity {
                 publishProgress("# - Conectado Exitosamente\n");
                 publishProgress("# - Consultando...\n");
 
-                String sql  = "SELECT * FROM TblPelicula";
+                String sql  = "SELECT * FROM movie";
                 publishProgress("# - " + sql + "\n");
                 ResultSet rs = db.ejecutarConsulta(sql);
                 publishProgress("# - Resultado\n");
                 while(rs.next()){
-                    publishProgress("$ - Pelicula: " + rs.getString("titulo") + "\n");
+                    publishProgress("$ - Pelicula: " + rs.getString("nombre") + "\n");
                 }
                 publishProgress("# - Consulta Realizada \n");
 
